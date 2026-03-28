@@ -15,9 +15,7 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
   res.json({ status: "Backend is running" });
-});
-
-
+})
 app.use("/api/auth",auth);
 app.use('/api/complaints',complaintRoutes)
 app.use('/api/ai', aiRoutes)

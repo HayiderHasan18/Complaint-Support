@@ -10,7 +10,6 @@ export const saveComplaint = async ({ customer_name, contact, issue, message }) 
   return result.insertId;
 };
 
-
 export const saveAIAnalysis = async ({ complaintId, category, urgency, confidence,summary,draftResponse }) => {
   await db.query(
     "INSERT INTO ai_analysis (complaint_id, category, urgency, confidence,summary,draft_response) VALUES (?, ?, ?, ?,?,?)",
