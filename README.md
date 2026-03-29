@@ -38,7 +38,7 @@ dotenv
 CORS
 ⚙️ Local Setup Instructions
 1. Clone the repository
-git clone https://github.com/HayiderHasan18/Complaint-Support.git
+git clone https://github.com/Heydaraa/Complaint-Support.git
 cd your-repo-name
 2. Backend Setup
 cd backend
