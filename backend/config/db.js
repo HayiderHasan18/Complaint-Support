@@ -7,15 +7,22 @@ const db = mysql.createPool({
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
+  port: process.env.DB_PORT, 
   connectionLimit: 10,
+
+  
+  ssl: {
+    rejectUnauthorized: true
+  }
 }).promise();
+
 (async () => {
   try {
     const conn = await db.getConnection();
     console.log("database connected successfully!");
     conn.release();
   } catch (err) {
-    console.error("database  connection failed:", err.message);
+    console.error("database connection failed:", err.message);
   }
 })();
 
