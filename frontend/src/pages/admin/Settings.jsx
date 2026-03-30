@@ -17,7 +17,7 @@ const Input = ({ label, value, setValue, type = "text" }) => (
   </div>
 );
 function Settings() {
-  const BACKEND_URL = "http://localhost:5000";
+  const BACKEND_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
   const [profile, setProfile] = useState({ companyName: "", address: "", email: "", phone: "" });
   const [password, setPassword] = useState({ current: "", new: "", confirm: "" });
   const [logoFile, setLogoFile] = useState(null);

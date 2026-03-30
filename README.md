@@ -1,50 +1,81 @@
-🧾 AI-Powered Complaint Management System
+# 🧾 AI-Powered Complaint Management System
 
-A full-stack web application that enables users to submit complaints and interact with an AI assistant for guidance. The system includes intelligent complaint categorization, draft response generation, and an admin-controlled workflow with email notifications upon approval.
+**Smart Complaint Handling with AI Assistance & Admin Workflow**
 
-🚀 Features
-🤖 AI-powered chatbot for user queries and complaint assistance
-📝 Users can submit complaints without registration
-🧠 AI automatically categorizes complaints
-✍️ AI-generated draft responses for complaints
-👨‍💼 Admin-only access for managing complaints
-✅ Admin approval workflow before sending responses
-📧 Email notifications sent to users after admin approval
-📊 Admin dashboard for managing and tracking complaints
-🔍 Complaint status tracking and management
-⚡ RESTful API built with Node.js & Express
-🗄️ MySQL database integration
-🛠️ Tech Stack
+---
 
-Frontend:
+## 🧠 Overview
 
-React / HTML / Tailwind CSS / JavaScript
+A full-stack web application that allows users to submit complaints and interact with an AI assistant for guidance.
 
-Backend:
+The system leverages AI to:
+- Automatically categorize complaints
+- Generate draft responses
 
-Node.js
-Express.js
+It also includes an **admin-controlled approval workflow** with email notifications.
 
-Database:
+---
 
-MySQL
+## 🚀 Live Demo
 
-Other:
+- 🌐 Frontend: https://customer-support-hayidar.netlify.app 
+    
 
-AI API integration
-Nodemailer (email service)
-Axios
-dotenv
-CORS
-⚙️ Local Setup Instructions
-1. Clone the repository
+---
+
+## ✨ Key Features
+
+### 🤖 AI Capabilities
+- AI-powered chatbot for user support
+- Automatic complaint categorization
+- AI-generated draft responses
+
+### 👤 User Features
+- Submit complaints without registration
+- Track complaint status
+- Interact with AI assistant
+
+### 👨‍💼 Admin Features
+- Secure admin-only access
+- Review and manage complaints
+- Edit and approve AI-generated responses
+- Send final responses via email
+- Dashboard for monitoring complaints
+
+---
+
+## 📧 Notification System
+- Email notifications sent after admin approval
+
+---
+
+## 🛠️ Tech Stack
+
+| Category   | Technology |
+|-----------|------------|
+| Frontend  | React, Tailwind CSS, JavaScript |
+| Backend   | Node.js, Express.js |
+| Database  | MySQL |
+| Others    | AI API, Nodemailer, Axios, dotenv, CORS |
+
+---
+
+## ⚙️ Local Development Setup
+
+### 1️⃣ Clone Repository
+```bash
 git clone https://github.com/Heydaraa/Complaint-Support.git
-cd your-repo-name
-2. Backend Setup
+cd Complaint-Support
+
+⚙️ Local Development Setup
+1️⃣ Clone Repository
+git clone https://github.com/Heydaraa/Complaint-Support.git
+cd Complaint-Support
+2️⃣ Backend Setup
 cd backend
 npm install
 
-Create a .env file in the backend folder:
+Create a .env file inside backend/:
 
 DB_HOST=localhost
 DB_USER=root
@@ -55,42 +86,49 @@ DB_PORT=3306
 PORT=5000
 JWT_SECRET=your_secret_key
 
-# AI API (if used)
+# AI API
 AI_API_KEY=your_api_key
 
-# Email configuration
+# Email Configuration
 EMAIL_USER=your_email@example.com
 EMAIL_PASS=your_email_password
 
-Run the backend:
+Run backend:
 
 npm start
-3. Database Setup (MySQL)
-Start MySQL using XAMPP or MySQL Workbench
+3️⃣ Database Setup (MySQL)
+Start MySQL (XAMPP or Workbench)
 Create database:
 CREATE DATABASE your_database_name;
-Import or create required tables based on your schema
-4. Frontend Setup
+Import or create required tables
+4️⃣ Frontend Setup
 cd ../frontend
 npm install
 npm run dev
 ▶️ Running the Application
 Start MySQL server
 Start backend server
-Start frontend application
+Start frontend development server
 Open browser:
-http://localhost:5173
-📌 System Workflow
-Users can:
-Ask questions via AI chat
-Submit complaints
-AI system:
-Categorizes complaints
-Generates draft responses
-Admin:
-Reviews complaints
-Edits/approves responses
-Sends final response via email
+
+👉 http://localhost:5173
+
+🔄 System Workflow
+User → Submit Complaint / Chat with AI
+        ↓
+AI → Categorize + Generate Draft
+        ↓
+Admin → Review & Approve
+        ↓
+System → Send Email Response
+📁 Project Structure
+Complaint-Support/
+│── frontend/     # React client
+│── backend/      # Node.js + Express API
+📌 Notes
+Ensure environment variables are correctly configured
+Email service requires valid credentials
+AI features depend on API availability
 📄 License
 
 This project is developed for educational and internship purposes.
