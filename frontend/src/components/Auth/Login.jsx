@@ -26,6 +26,9 @@ function Login({ goToSignup }) {
   return (
     <div className="w-full max-w-sm bg-white rounded-2xl shadow-xl p-8">
       <h2 className="text-2xl font-bold text-center mb-6">Login to your account</h2>
+      <p className="text-center text-sm text-gray-500 mb-6">
+       Default Login → Email: admin@gmail.com | Password: admin123
+   </p>
 
       {msg && (
         <p className="text-center text-sm mb-4 text-red-500">{msg}</p>
